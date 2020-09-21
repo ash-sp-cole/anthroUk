@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  
+  background-color: royalblue;
+}
+
+body{
+  background-image: url(../src//Media/field.jpg) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 10px;
+
 }
 
 .App-logo {

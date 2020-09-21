@@ -1,5 +1,6 @@
 import { Paper } from "@material-ui/core";
 import React, { memo } from "react";
+import "../Home/home.css";
 import {
   ZoomableGroup,
   ComposableMap,

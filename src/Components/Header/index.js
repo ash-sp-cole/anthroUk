@@ -26,6 +26,7 @@ const Header =()  =>{
      style={{
          marginTop:'2%',
          height:'10vh',
+         background:'none'
          
           
      }}

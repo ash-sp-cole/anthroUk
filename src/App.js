@@ -7,14 +7,14 @@ import Contact from "./Components/Contact";
 import Header from './Components/Header';
 import School from "./Components/Activities/SchoolSpirtual";
 import SteinerHouse from "./Components/Activities/RudolfSteinerHouse";
-
+import "./App.css";
 
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header/>
+      <Header /> 
 
 
         <Switch>
