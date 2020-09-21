@@ -1,9 +1,12 @@
 body {
     margin: 0;
     padding: 0 1.5rem;
+    
   }
   
-  svg {
+  svg 
+  {
+    
     display: inline-block;
     vertical-align: middle;
   }

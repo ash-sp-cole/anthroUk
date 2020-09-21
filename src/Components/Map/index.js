@@ -1,3 +1,4 @@
+import { Paper } from "@material-ui/core";
 import React, { memo } from "react";
 import {
   ZoomableGroup,
@@ -21,7 +22,8 @@ const rounded = num => {
 
 const MapChart = ({ setTooltipContent }) => {
   return (
-      <div style={{width:'75vw', margin:'auto'}}>
+      <div style={{width:'75vw', margin:'auto', backgroundColor:'#fafafa'}}>
+        <Paper elevation={9}>
     <>
       <ComposableMap data-tip="" projectionConfig={{ scale: 200 }} style={{width:'75vw', margin:'auto'}}>
         <ZoomableGroup>
@@ -59,6 +61,7 @@ const MapChart = ({ setTooltipContent }) => {
         </ZoomableGroup>
       </ComposableMap>
     </>
+    </Paper>
     </div>
   );
 };

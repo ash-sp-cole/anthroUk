@@ -29,8 +29,8 @@ export default function ContactModal() {
   return (
     <div style={{margin:'auto'}} >
          <Tooltip TransitionComponent={Zoom} title="Click for Popup" style={{margin:'auto'}}>
-      <Button  tyle={{margin:'auto'}}variant="outlined" color="primary" onClick={handleClickOpen}>
-        Learn More
+      <Button  style={{margin:'auto'}}variant="contained" color="secondary" onClick={handleClickOpen}>
+        Contact Information / Subscribe
       </Button>
       </Tooltip>
       <Dialog
