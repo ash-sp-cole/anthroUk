@@ -6,7 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import InfoModel from './info';
+import InfoModel from './ModalContent.js';
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from '@material-ui/core/Zoom'
 
@@ -15,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AboutMeModal() {
+export default function ContactModal() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -27,9 +27,9 @@ export default function AboutMeModal() {
   };
 
   return (
-    <div>
-         <Tooltip TransitionComponent={Zoom} title="Click for Popup">
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+    <div style={{margin:'auto'}} >
+         <Tooltip TransitionComponent={Zoom} title="Click for Popup" style={{margin:'auto'}}>
+      <Button  tyle={{margin:'auto'}}variant="outlined" color="primary" onClick={handleClickOpen}>
         Learn More
       </Button>
       </Tooltip>
@@ -38,10 +38,11 @@ export default function AboutMeModal() {
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
+     
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle id="alert-dialog-slide-title">{"About Rudolf Steiner"}</DialogTitle>
+        <DialogTitle id="alert-dialog-slide-title">{"Contact Us"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             <InfoModel/>

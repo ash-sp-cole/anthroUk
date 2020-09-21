@@ -4,65 +4,61 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import colorWall from "../../Media/colorWall.png";
+import intro from "../../Media/intro.jpg";
+import ceiling from "../../Media/ceiling.jpg";
+import geothe from "../../Media/geothe.jpg";
+import Steiner from "../../Media/frontSteiner.jpg";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 500,
-  },
-  image: {
-    width: 128,
-    height: 128,
-  },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
-}));
+class RightBoxHome extends React.Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <Slider {...settings}>
+        <div>
+          <img
+            style={{
+              height: "500px",
+          
+              margin: 'auto'
+            }}
+            src={Steiner}></img>
 
-export default function RightBoxHome() {
-  const classes = useStyles();
+        </div>
+        <div>
+          <img
+            style={{
+              height: "500px",
 
-  return (
-    <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <Grid container spacing={2}>
-          <Grid item>
-            <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="/static/images/grid/complex.jpg" />
-            </ButtonBase>
-          </Grid>
-          <Grid item xs={12} sm container>
-            <Grid item xs container direction="column" spacing={2}>
-              <Grid item xs>
-                <Typography gutterBottom variant="subtitle1">
-                  Standard license
-                </Typography>
-                <Typography variant="body2" gutterBottom>
-                  Full resolution 1920x1080 • JPEG
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  ID: 1030114
-                </Typography>
-              </Grid>
-              <Grid item>
-                <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                  Remove
-                </Typography>
-              </Grid>
-            </Grid>
-            <Grid item>
-              <Typography variant="subtitle1">$19.00</Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Paper>
-    </div>
-  );
+              margin: 'auto'
+            }}
+            src={geothe}></img>
+
+        </div>
+        <div>
+          <img
+            style={{
+              height: "500px",
+
+              margin: 'auto'
+            }}
+            src={ceiling}></img>
+
+        </div>
+
+
+      </Slider>
+    );
+  }
 }
+
+export default RightBoxHome;

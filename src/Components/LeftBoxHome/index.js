@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    borderRadius:'20px'
   },
 }));
 
