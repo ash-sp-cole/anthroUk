@@ -1,12 +1,10 @@
 import React from "react";
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Header from "../Header";
 import { makeStyles } from '@material-ui/core/styles';
 import LeftHomeBox from "../LeftBoxHome";
 import InfoBoxMenu from "../InfoBoxMenu";
 import RightHomeBox from "../RightBoxHome";
-import veilPaint from "../../Media/veilpainting.jpg";
 import NewsBox from "../NewsBoxProp";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +33,7 @@ const Home = () => {
           
           <Paper className={classes.paper} id="header" elevation={14} style={{ margin:'auto' }}>
            
-          <Paper className={classes.paper} style={{width:'75vw', minHeight:'45%', margin:'auto', marginTop:'3%'}} elevation={14}><h1 style={{ fontSize: '2.em', margin:'auto',marginTop:'3%' }}>Welcome to the Anthroposophical home for England, Scotland and Wales</h1> </Paper>
+          <Paper className={classes.paper} style={{width:'75vw', minHeight:'45%', borderRadius:'15px',margin:'auto', marginTop:'3%',opacity:'0.8'}} elevation={14}><h1 style={{ fontSize: '2.em', margin:'auto',marginTop:'3%', opacity:'1' }}>Welcome to the Anthroposophical home for England, Scotland and Wales</h1> </Paper>
           </Paper>
         </Grid>
 

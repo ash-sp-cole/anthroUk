@@ -1,0 +1,63 @@
+{
+
+    "United States of America": [
+        { 
+            "PlaceName": "PA Anthroposphy Online",
+            "Phone": "01793-3838-38",
+            "Website": "www.usa-anthro-.com",
+            "Icon":"PA",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://www.rsh.anth.org.uk/wp-content/uploads/2019/05/fullsizeoutput_1232-1024x1024.jpg"
+        },
+        {
+            "PlaceName": "California Waldorf",
+            "Phone": "07574-663-112",
+            "Website": "https://camphillschool.org/",
+            "Icon":"C",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://images1.privateschoolreview.com/photo/1122x864/23000/23202/the-camphill-school-XN1O5j.webp"
+        },
+        {
+            "PlaceName": "South West Spritual School",
+            "Phone": "0263-736-7789",
+            "Website": "www.School-for-science.org",
+            "Icon":"SW",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://careindustrynews.co.uk/wp-content/uploads/2016/06/A-shared-achievement-Camphill-Newton-Dee.jpg"
+        }
+    ],
+    "United Kingdom": [
+        { 
+            "PlaceName": "PAdaday Online",
+            "Phone": "01dada838-38",
+            "Website": "wwdadathro-.com",
+            "Icon":"PA",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://www.rsh.anth.org.uk/wp-content/uploads/2019/05/fullsizeoutput_1232-1024x1024.jpg"
+        },
+        {
+            "PlaceName": "Cadarnia Waldorf",
+            "Phone": "0dada3-112",
+            "Website": "www.adaorf-California.com",
+            "Icon":"CW",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://images1.privateschoolreview.com/photo/1122x864/23000/23202/the-camphill-school-XN1O5j.webp"
+        },
+        {
+            "PlaceName": "adapritual School",
+            "Phone": "0ada6-7789",
+            "Website": "www.Sdad-for-science.org",
+            "Icon":"AS",
+            "About" : "Anthroposophy is a philosophy founded in the early 20th century by the esotericist Rudolf Steiner that postulates the existence of an objective, intellectually comprehensible spiritual world, accessible to human experience.",
+            "MoreInfo": "Anthroposophy's far-reaching view of personal development and human evolution gives a new context for today's widespread egotism. We each need to gain inner freedom and self-reliance in order to be change agents and conveners of a healthy future civilization, one where the whole community and the individual are seen and valued by each other. ",
+            "Image":"https://careindustrynews.co.uk/wp-content/uploads/2016/06/A-shared-achievement-Camphill-Newton-Dee.jpg"
+        }
+    ]
+
+
+}

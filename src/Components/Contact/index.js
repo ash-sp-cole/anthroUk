@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from "@material-ui/core/Typography";
-import Header from "../Header";
 import { makeStyles } from '@material-ui/core/styles';
-import LeftHomeBox from "../LeftBoxHome";
-import RightHomeBox from "../RightBoxHome";
-import NewsBox from "../NewsBoxProp";
 import MapChart from "../Map";
 import ContactModal from "./ModalTrigger.js";
 import ReactTooltip from "react-tooltip";
@@ -36,7 +32,7 @@ const Contact = () => {
 
         <Grid item xs={12} style={{ margin: 'auto' }} >
           <Paper elevation={7} className={classes.paper} style={{width:'75vw',margin:'auto'}}>
-            <h1 style={{fontSize:'4em'}}>Our movement , part of a larger Whole</h1>
+            <h1 style={{fontSize:'4em'}}>Our movement</h1>
             <ContactModal />
             <br></br>
 

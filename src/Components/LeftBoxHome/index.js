@@ -6,8 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import steiner from "../../Media/steinerPortrait.png"
 import AboutMeModal from '../AboutMeModel';
-import Tooltip from "@material-ui/core/Tooltip";
-import Zoom from '@material-ui/core/Zoom';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {

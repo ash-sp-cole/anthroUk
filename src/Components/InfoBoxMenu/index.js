@@ -3,27 +3,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import { withStyles } from '@material-ui/core/styles';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import steiner from "../../Media/steinerPortrait.png"
-import AboutMeModal from '../AboutMeModel';
-import Tooltip from "@material-ui/core/Tooltip";
-import Zoom from '@material-ui/core/Zoom';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Fade from '@material-ui/core/Fade';
-import geothe from "../../Media/blackBoard.jpg";
-import SendIcon from '@material-ui/icons/Send';
 import SchoolIcon from '@material-ui/icons/School';
 import GroupIcon from '@material-ui/icons/Group';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import EcoIcon from '@material-ui/icons/Eco';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const StyledMenu = withStyles({
     paper: {
@@ -133,7 +124,7 @@ export default function FadeMenu() {
                                         variant="contained"
                                         color="secondary"
                                     >
-                                        <StyledMenuItem component={Link} to={"/school-of-spiritual-science"}> 
+                                        <StyledMenuItem component={Link} to={"/school-of-spiritual-science"}>
                                             <ListItemIcon>
                                                 <SchoolIcon fontSize="small" />
                                             </ListItemIcon>

@@ -1,16 +1,24 @@
+import { Paper } from "@material-ui/core";
 import React from "react";
 
 
 
-const About = () =>{
+class About extends React.Component {
 
-    return(
-        <div>
-            <h2>About page</h2>
-        </div>
+    render() {
+        return(
+            <div>
+                <Paper elevation={7}>
 
-    )
+                    <h1> Class comp</h1>
+
+
+                </Paper>
+            </div>
+        )
+    }
 
 }
+
 
 export default About;

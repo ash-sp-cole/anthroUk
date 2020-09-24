@@ -1,10 +1,23 @@
 #header{
-   
+    background-image: url(../../Media/veilpainting.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
     height:25vh
+}
+
+#header:hover {
+
+    opacity: 1;
+}
+
+#opacity {
+    opacity: 0.95;
+}
+
+#opacity:hover{
+    opacity: 1;
 }

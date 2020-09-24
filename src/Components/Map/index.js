@@ -1,68 +1,79 @@
 import { Paper } from "@material-ui/core";
-import React, { memo } from "react";
+import React, { memo , useState } from "react";
 import "../Home/home.css";
+import mapJson from "../Map/mapInfo.json";
 import {
   ZoomableGroup,
   ComposableMap,
   Geographies,
   Geography
 } from "react-simple-maps";
-import ReactTooltip from "react-tooltip";
-const geoUrl =
-  "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
-const rounded = num => {
-  if (num > 1000000000) {
-    return Math.round(num / 100000000) / 10 + "Bn";
-  } else if (num > 1000000) {
-    return Math.round(num / 100000) / 10 + "M";
-  } else {
-    return Math.round(num / 100) / 10 + "K";
-  }
-};
+
+import MapModal from "./modalMap";
+
+const geoUrl = mapJson
+
+
+
+
 
 const MapChart = ({ setTooltipContent }) => {
+
+ let [selection, setSelection] = useState(null);
+
+
+
   return (
-      <div style={{width:'75vw', margin:'auto', backgroundColor:'#fafafa'}}>
-        <Paper elevation={9}>
-    <>
-      <ComposableMap data-tip="" projectionConfig={{ scale: 200 }} style={{width:'75vw', margin:'auto'}}>
-        <ZoomableGroup>
-          <Geographies geography={geoUrl}>
-            {({ geographies }) =>
-              geographies.map(geo => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  onMouseEnter={() => {
-                    const { NAME, POP_EST } = geo.properties;
-                    setTooltipContent(`${NAME} — ${rounded(POP_EST)}`);
+    <div style={{ width: '75vw', margin: 'auto', backgroundColor: '#fafafa' }}>
+      <Paper elevation={9}>
+    
+       <h2> {selection}</h2>
+        <MapModal testProp={selection}  />
+        <>
+          <ComposableMap data-tip="" projectionConfig={{ scale: 200 }} style={{ width: '75vw', margin: 'auto' }}>
+            <ZoomableGroup>
+              <Geographies geography={geoUrl}>
+                {({ geographies }) =>
+                  geographies.map(geo => (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      onMouseEnter={() => {
+                        const { NAME, COMMUNITIES } = geo.properties;
+                        setTooltipContent(`${NAME} —${COMMUNITIES} `);
+                        
+                    
                   }}
-                  onMouseLeave={() => {
-                    setTooltipContent("");
-                  }}
-                  style={{
-                    default: {
-                      fill: "#D6D6DA",
-                      outline: "none"
-                    },
-                    hover: {
-                      fill: "#F53",
-                      outline: "none"
-                    },
-                    pressed: {
-                      fill: "#E42",
-                      outline: "none"
-                    }
-                  }}
-                />
-              ))
-            }
-          </Geographies>
-        </ZoomableGroup>
-      </ComposableMap>
-    </>
-    </Paper>
+                  onClick={() => {
+                    const { NAME } = geo.properties;
+                    setSelection(NAME);
+                    
+                
+              }}
+                      style={{
+                        default: {
+                          fill: "#D6D6DA",
+                          outline: "none"
+                        },
+                        hover: {
+                          fill: "#F53",
+                          outline: "none"
+                        },
+                        pressed: {
+                          fill: "#E42",
+                          outline: "none"
+                        }
+                      }}
+                    />
+                  ))
+                }
+              </Geographies>
+            </ZoomableGroup>
+          </ComposableMap>
+        </>
+
+      </Paper>
     </div>
   );
 };
