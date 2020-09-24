@@ -31,7 +31,7 @@ const MapChart = ({ setTooltipContent }) => {
        <h2> {selection}</h2>
         <MapModal testProp={selection}  />
         <>
-          <ComposableMap data-tip="" projectionConfig={{ scale: 200 }} style={{ width: '75vw', margin: 'auto' }}>
+          <ComposableMap data-tip="" projectionConfig={{ scale: 200 }} style={{ width: '60%', margin: 'auto' }}>
             <ZoomableGroup>
               <Geographies geography={geoUrl}>
                 {({ geographies }) =>
