@@ -6,7 +6,7 @@ import ceiling from "../../Media/ceiling.jpg";
 import geothe from "../../Media/geothe.jpg";
 import Steiner from "../../Media/frontSteiner.jpg";
 
-class RightBoxHome extends React.Component {
+class CenterBoxHome extends React.Component {
   render() {
     var settings = {
       dots: true,
@@ -60,4 +60,4 @@ class RightBoxHome extends React.Component {
   }
 }
 
-export default RightBoxHome;
+export default CenterBoxHome;

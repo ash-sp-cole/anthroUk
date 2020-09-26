@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,Switch, BrowserRouter } from "react-router-dom";
-import About from "./Components/About";
+import LearnMore from "./Components/LearnMoreHome";
 import Home from "./Components/Home";
 import Activities from "./Components/Activities";
 import Contact from "./Components/Contact";
@@ -19,7 +19,7 @@ function App() {
 
         <Switch>
         <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/about" component={LearnMore} />
           <Route path="/activities" component={Activities} />
           <Route path="/contact" component={Contact} />
           <Route path="/school-of-spiritual-science" component={School}/>

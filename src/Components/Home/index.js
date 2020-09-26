@@ -4,8 +4,11 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import LeftHomeBox from "../LeftBoxHome";
 import InfoBoxMenu from "../InfoBoxMenu";
-import RightHomeBox from "../RightBoxHome";
+import RightBoxHome from "../RightHomeBox";
 import NewsBox from "../NewsBoxProp";
+import MapChart from "../Map";
+import CenterBoxHome from "../CenterBoxHome";
+import { Typography } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -25,43 +28,69 @@ const Home = () => {
   return (
     <div >
       <Grid container spacing={3} style={{ width: '95vw', margin: "auto" }} >
-        
+
         <Grid item xs={12}
-          style={{ marginBottom: '2%', margin:'auto' }}
+          style={{ marginBottom: '2%', margin: 'auto' }}
 
         >
-          
-          <Paper className={classes.paper} id="header" elevation={14} style={{ margin:'auto' }}>
-           
-          <Paper className={classes.paper} style={{width:'75vw', minHeight:'45%', borderRadius:'15px',margin:'auto', marginTop:'3%',opacity:'0.8'}} elevation={14}><h1 style={{ fontSize: '2.em', margin:'auto',marginTop:'3%', opacity:'1' }}>Welcome to the Anthroposophical home for England, Scotland and Wales</h1> </Paper>
+
+          <Paper className={classes.paper} id="header" elevation={14} style={{ margin: 'auto' }}>
+
+            <Paper className={classes.paper}
+              style={{ width: '75vw', minHeight: '45%', fontFamily:'anthrop', borderRadius: '15px', margin: 'auto', opacity: '0.8' }}
+              elevation={14}>
+                 <Typography variant="h9" variant='subtitle1'>
+                <h1 style={{ margin: 'auto', opacity: '1',fontFamily:'anthrop', }}>
+               The home of</h1>
+         
+                </Typography>
+                <Typography variant="h6">
+                <h1 style={{ margin: 'auto', opacity: '1', fontFamily:'anthrop'}}>
+                Anthroposophy</h1>
+         
+                </Typography>
+                <Typography variant="h9"   >
+                <h1 style={{ margin: 'auto', opacity: '1' }}>
+                England , Scotland & Wales</h1>
+         
+                </Typography>
+            </Paper>
           </Paper>
         </Grid>
 
-        
-        <Grid item xs={12} sm={6}>
-          
+
+        <Grid item xs={12} sm={3}>
+
           <LeftHomeBox />
           <br></br>
-       <InfoBoxMenu/>
+          <InfoBoxMenu />
 
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <RightHomeBox />
+        <Grid item xs={12} sm={6} id="header" >
+         <RightBoxHome/>
+
+        </Grid>
+       < Grid item xs={12} sm={3}>
+
+     <CenterBoxHome/>
+          <br></br>
+          <LeftHomeBox/>
 
         </Grid>
 
-      
+
 
         <Grid item xs={12}
-          style={{opacity:"0.8"}}
+          style={{ opacity: "0.7" }}
+          
         >
-          <Paper ><NewsBox
+          <Paper elevtaion={9} ><NewsBox
             title="Left Left"
           /></Paper>
         </Grid>
-       
-      
-        
+
+
+
       </Grid>
     </div>
   )

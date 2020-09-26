@@ -11,7 +11,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from '@material-ui/core/Zoom'
 import ModalContent from './modalContent';
 import { Paper } from '@material-ui/core';
-
+import TextField from "@material-ui/core/TextField";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -40,13 +40,16 @@ export default function MapModal(props) {
 
   return (
     <div>
+      <TextField id="standard-basic" label="Search by Name" />
+      <br></br>
+      <br></br>
       <Tooltip TransitionComponent={Zoom} title="Click for Popup">
         <Button variant="outlined" color="primary" onClick={handleClickOpen}>
           Learn More
       </Button>
       </Tooltip>
       
-<Paper style={{height:"70%",width:"95%", margin:'auto', marginTop:'5%'}} elevation={5} >
+<Paper style={{height:"90%",width:"95%", margin:'auto', marginTop:'5%'}} elevation={5} >
       <Dialog
         open={open}
         TransitionComponent={Transition}

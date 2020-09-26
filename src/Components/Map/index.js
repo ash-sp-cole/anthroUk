@@ -25,7 +25,7 @@ const MapChart = ({ setTooltipContent }) => {
 
 
   return (
-    <div style={{ width: '75vw', margin: 'auto', backgroundColor: '#fafafa' }}>
+    <div style={{ width: '99%', margin: 'auto', backgroundColor: '#fafafa' }}>
       <Paper elevation={9}>
     
        <h2> {selection}</h2>
@@ -46,8 +46,8 @@ const MapChart = ({ setTooltipContent }) => {
                     
                   }}
                   onClick={() => {
-                    const { NAME } = geo.properties;
-                    setSelection(NAME);
+                    const { SEARCH_NAME } = geo.properties;
+                    setSelection(SEARCH_NAME);
                     
                 
               }}

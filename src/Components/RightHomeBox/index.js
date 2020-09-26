@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from "@material-ui/core/Typography";
-import "./styles.css";
+
 import { makeStyles } from '@material-ui/core/styles';
-import MapChart from "../Map";
-import ContactModal from "./ModalTrigger.js";
+import MapChart from "../Map/index";
+import ContactModal from "../Contact/ModalTrigger";
 import ReactTooltip from "react-tooltip";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
-  
 }));
 
 
@@ -33,8 +32,8 @@ const Contact = () => {
 
 
         <Grid item xs={12} style={{ margin: 'auto' }} >
-          <Paper elevation={7} className={classes.paper} style={{width:'75vw', fontFamily:'anthrop',margin:'auto'}}>
-            <h1 style={{ fontFamily:'anthrop',fontSize:'4em'}}>Our movement</h1>
+          <Paper elevation={7} className={classes.paper} style={{margin:'auto'}}>
+            <h1 style={{fontSize:'3em'}}>Our movement</h1>
             <ContactModal />
             <br></br>
 

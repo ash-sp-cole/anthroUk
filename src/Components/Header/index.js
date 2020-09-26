@@ -21,8 +21,8 @@ const Header =()  =>{
       className="headerBody"
       showLabels
      style={{
-         marginTop:'2%',
-         height:'10vh',
+         marginTop:'1%',
+         height:'7vh',
          background:'none'
          
           

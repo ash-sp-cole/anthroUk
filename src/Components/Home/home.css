@@ -5,8 +5,8 @@
     -o-background-size: cover;
     background-size: cover;
     border-radius: 10px;
-    opacity: 0.9;
-    height:25vh
+    opacity: 0.99;
+    height:55%
 }
 
 #header:hover {
@@ -15,9 +15,17 @@
 }
 
 #opacity {
-    opacity: 0.95;
+    opacity: 0.95 !important;
 }
 
 #opacity:hover{
     opacity: 1;
 }
+@font-face {
+    font-family: anthrop;
+    src: url("../../Media/anthrop.ttf");
+  }
+  
+  div {
+    font-family: myFirstFont;
+  }

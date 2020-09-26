@@ -36108,7 +36108,8 @@
     "CONTINENT": "Europe",
     "REGION_UN": "Europe",
     "SUBREGION": "Northern Europe",
-    "COMMUNITIES" :"28 communities"
+    "COMMUNITIES" :"28 communities",
+    "SEARCH_NAME":"United Kingdom"
     }
     },
     {
@@ -39484,7 +39485,8 @@
     "CONTINENT": "North America",
     "REGION_UN": "Americas",
     "SUBREGION": "Northern America",
-    "COMMUNITIES" :"86 communities"
+    "COMMUNITIES" :"86 communities",
+    "SEARCH_NAME": "United States of America"
     }
     },
     {
