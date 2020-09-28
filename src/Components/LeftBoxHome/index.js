@@ -39,7 +39,7 @@ export default function LeftBoxHome() {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper} elevation={7}>
+      <Paper className={classes.paper} elevation={14}>
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>

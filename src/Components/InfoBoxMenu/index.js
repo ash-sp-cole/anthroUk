@@ -86,8 +86,8 @@ export default function FadeMenu() {
             <Paper className={classes.paper} elevation={7}>
                 <Grid container spacing={2}>
 
-                    <Grid item xs={12} sm container>
-                        <Grid item xs container direction="column" spacing={2}>
+                    <Grid item xs={12} sm container elevation={14}>
+                        <Grid item xs container direction="column" spacing={2} elevation={14}>
 
                             <Grid item xs style={{ marginRight: '1%' }}>
                                 <Typography gutterBottom variant="subtitle1">

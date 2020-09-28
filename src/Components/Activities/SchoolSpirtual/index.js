@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '5%',
         padding: theme.spacing(2),
         textAlign: 'center',
-        color: theme.palette.text.secondary
+        color: theme.palette.text.secondary,
+        fontFamily: 'anthrop'
     },
 }));
 
@@ -46,10 +47,16 @@ const School = () => {
 
 
                                     <img
-                                        style={{
-                                            margin: "auto",
-                                            width:'45vw'
-                                        }}
+                                      
+                                            style={{
+                                                margin: "auto",
+                                                width: '45%',
+                                                height:'75%',
+                                                maxHeight:'70vh',
+                                                maxWidth:'60vh'
+    
+                                            }}
+                                     
                                         alt="complex" src={Window} />
 
 
@@ -99,27 +106,7 @@ const School = () => {
 
                     </Paper>
                 </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="Left Left"
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="mid Left"
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="mid Right"
-
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="Right Right"
-                    /></Paper>
-                </Grid>
+               
             </Grid>
         </div>
     )

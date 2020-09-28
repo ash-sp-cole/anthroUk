@@ -12,12 +12,16 @@ import SteinerHouse from "../../../Media/SteinerHouse.jpg"
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        fontFamily: 'anthrop'
+    
+
     },
     paper: {
-        marginTop: '5%',
+        marginTop: '2%',
         padding: theme.spacing(2),
         textAlign: 'center',
-        color: theme.palette.text.secondary
+        color: theme.palette.text.secondary,
+        fontFamily: 'anthrop'
     },
 }));
 
@@ -29,13 +33,13 @@ const School = () => {
         <div >
             <Grid container spacing={3} style={{ width: '95vw', margin: "auto" }} >
                 <Grid item xs={12}
-                    style={{ marginBottom: '%' }}
+                  
 
                 >
-                    <Paper className={classes.paper} elevation={14}><h1 style={{ fontSize: '2.em' }}> The School of Spritual Science</h1> </Paper>
+                    <Paper className={classes.paper} elevation={14}><h1 style={{ fontSize: '2.em' }}> The Rudolf Steiner House</h1> </Paper>
                 </Grid>
                 <Grid item xs={12}
-                    style={{ marginBottom: '%' }}
+                 
 
                 >
                     <Paper className={classes.paper} elevation={14}>
@@ -48,7 +52,11 @@ const School = () => {
                                     <img
                                         style={{
                                             margin: "auto",
-                                            width: '45vw'
+                                            width: '45%',
+                                            height:'75%',
+                                            maxHeight:'70vh',
+                                            maxWidth:'60vh'
+
                                         }}
                                         alt="complex" src={SteinerHouse} />
 
@@ -102,27 +110,7 @@ const School = () => {
 
                     </Paper>
                 </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="Left Left"
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="mid Left"
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="mid Right"
-
-                    /></Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper ><NewsBox
-                        title="Right Right"
-                    /></Paper>
-                </Grid>
+               
             </Grid>
         </div>
     )
