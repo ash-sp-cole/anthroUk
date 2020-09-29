@@ -14,13 +14,8 @@
     opacity: 1;
 }
 
-#opacity {
-    opacity: 0.95 !important;
-}
 
-#opacity:hover{
-    opacity: 1;
-}
+
 @font-face {
     font-family: anthrop;
     src: url("../../Media/anthrop.ttf");
